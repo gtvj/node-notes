@@ -10,9 +10,7 @@ let smart_person = {
 rl.question("Give me the name of a smart person? ", answer => {
 
     smart_person.name = answer;
-
     rl.setPrompt(`What would ${smart_person.name} say? `);
-
     rl.prompt();
 });
 
