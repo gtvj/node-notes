@@ -1,4 +1,5 @@
 let https = require('https');
+let our_data = require('./our_data');
 
 let tools = {
     sayHi() {
@@ -22,6 +23,10 @@ let tools = {
                 callback(body)
             });
         })
+    },
+
+    getFirstItemFromOurData() {
+        return our_data[0];
     }
 };
 
